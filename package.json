@@ -3,13 +3,33 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@coinbase/wallet-sdk": "^3.6.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "@walletconnect/web3-provider": "^1.8.0",
+    "@web3modal/ethereum": "^2.0.0-rc.2",
+    "@web3modal/react": "^2.0.0-rc.2",
+    "assert": "^2.0.0",
+    "browserify": "^17.0.0",
+    "buffer": "^6.0.3",
+    "ethers": "^5.7.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
     "react": "^18.2.0",
+    "react-app-rewired": "^2.2.1",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.0"
+    "react-router-dom": "^6.6.1",
+    "react-scripts": "4.0.3",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0",
+    "util": "^0.12.5",
+    "wagmi": "^0.10.6",
+    "web-vitals": "^2.1.0",
+    "web3": "^1.8.1",
+    "web3modal": "^1.9.11"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +54,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
   }
 }
