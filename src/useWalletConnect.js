@@ -5,7 +5,7 @@ import CoinbaseWalletSDK from "@coinbase/wallet-sdk";
 import { useState } from "react";
 
 
-const useWalletConnect = (network, theme, chainid, rpcURLString) => {
+const useWalletConnect = (appname, theme, chainid, rpcURLString) => {
 
     const [isWeb3WalletConnected, setISWeb3WalletConnected] = useState(false);
     const [web3WalletConnection, setWeb3WalletConnection] = useState(null);    
@@ -60,12 +60,13 @@ const useWalletConnect = (network, theme, chainid, rpcURLString) => {
               5: rpcURLString
             },            
             qrcode: true,
+            appName: appname, // Required
           }
         },
         coinbasewallet: {
           package: CoinbaseWalletSDK, // Required
           options: {
-            appName: "Coinbase", // Required
+            appName: appname, // Required
             alchemyId: "t4I2C_2QN-uTLjmmUpflVG4Oc5XvLddg", // Required
             chainId: chainid, //4 for Rinkeby, 1 for mainnet (default)
           },

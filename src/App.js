@@ -13,7 +13,7 @@ function App() {
           web3WalletCurrentAccount,
           currentWeb3WalletConnectChainID,
           currentWeb3WalletConnectChainName
-  ] = useWalletConnect("goerli", "dark", 1, "https://eth-goerli.g.alchemy.com/v2/t4I2C_2QN-uTLjmmUpflVG4Oc5XvLddg");
+  ] = useWalletConnect("Test App Name", "light", 1, "https://eth-goerli.g.alchemy.com/v2/t4I2C_2QN-uTLjmmUpflVG4Oc5XvLddg");
 
   const smartContractABI = [
     {
